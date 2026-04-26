@@ -15,6 +15,14 @@ gsap.ticker.lagSmoothing(0);
 
 gsap.registerPlugin(ScrollTrigger);
 
+// --- ANIMAÇÃO SPLIT TEXT HERO ---
+
+const heroTitle = document.getElementById('hero-title');
+const text = heroTitle.textContent;
+const characters = text.split("");
+
+
+
 // 1. TRANSIÇÃO HERO: O Granulado se desfaz e expande
 gsap.to('.hero-bg, .hero-overlay', {
     opacity: 0,
